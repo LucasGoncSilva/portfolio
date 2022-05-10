@@ -134,7 +134,8 @@
             {% for i in project_cards %}
             <div class="distance interval_200" id="{{ i.get_name }}_card">
                 <figure>
-                    <img loading="lazy" src="/static/home/img/projects/{{ i.get_name }}.svg" alt="{{ i.get_name }}_logo">
+                    <img loading="lazy" src="/static/home/img/projects/{{ i.get_name }}.svg"
+                        alt="{{ i.get_name }}_logo">
                 </figure>
             </div>
 
@@ -202,7 +203,9 @@
 
         <h2>Contato</h2>
 
-        <form action="/mailing" method="post">
+        <form action="" method="post">
+            {% csrf_token %}
+
             <fieldset>
                 <legend>Enviar e-mail</legend>
 
