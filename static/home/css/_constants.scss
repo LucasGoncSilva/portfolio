@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h5 {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+section:nth-child(2),
+section:nth-child(3),
+section:nth-child(4) {
+    height: fit-content;
+    padding-bottom: 15vh;
+    padding-top: 20vh;
+    text-align: center;
+    color: var(--secondary_color);
+    position: relative;
+}
+
+// cards
+.cards_container {
+    display: grid;
+    place-items: center;
+    grid-column-gap: 5vw;
+    grid-row-gap: 5vw;
+    grid-template-columns: auto auto auto;
+    width: fit-content;
+    margin: 5vh auto 15vh;
+
+    div {
+        max-width: fit-content;
+        padding: 3vh;
+        transition: 400ms ease-in-out;
+        border: 0.2vw solid;
+        border-image: linear-gradient(135deg, var(--secondary_color), transparent 70%) 1;
+        border-top-left-radius: 40px;
+
+        &:hover {
+            border-image: linear-gradient(-45deg, var(--secondary_color), transparent 70%) 1;
+            background: var(--accent_color_3);
+            cursor: pointer;
+        }
+    }
+
+    figure img {
+        aspect-ratio: 1/1;
+        width: 10vw;
+    }
+}
+
+h2 {
+    font: 900 4vh 'Montserrat Alternates', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+// SweetAlertJS
+.swal2-popup h2 {
+    color: var(--secondary_color);
+}
+
+.swal2-popup p {
+    color: var(--accent_color_1);
+}
+
+.swal2-popup a {
+    color: var(--accent_color_1);
+    text-decoration: underline;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--accent_color_2);
+    border-radius: 10px 0 0 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent_color_1);
+    border-radius: 10px 0 0 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main_color);
+    box-shadow: inset 0 0 20px var(--accent_color_1);
+}

@@ -1,0 +1,16 @@
+.deco_top,
+.deco_bottom {
+    position: absolute;
+    width: 20vw;
+    z-index: -1;
+}
+
+.deco_top {
+    top: 0;
+    right: 0;
+}
+
+.deco_bottom {
+    bottom: 0;
+    left: 0;
+}

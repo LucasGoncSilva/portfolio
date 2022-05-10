@@ -1,0 +1,78 @@
+@media only screen and (max-width: 600px) {
+    .swal2-icon.swal2-info {
+        border-color: #4717f6 !important;
+    }
+
+    header {
+        .mobile-toggle {
+            display: grid;
+        }
+
+        nav {
+            display: none;
+        }
+    }
+
+    #textarea {
+        width: 260px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    nav > a {
+        padding: 0.5em;
+    }
+
+    #home {
+        text-align: center;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .cards_container {
+        margin: 5vh auto;
+        grid-column-gap: 5vh;
+        grid-row-gap: 5vh;
+        grid-template-columns: auto auto;
+
+        figure img {
+            width: 10vh;
+        }
+    }
+
+    #about {
+        & > div {
+            display: unset;
+        }
+
+        div div p {
+            text-align: left;
+            margin: 1vh 3vh 3vh;
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #about {
+        & > div {
+            display: unset;
+        }
+
+        div div {
+            margin-bottom: 3vh;
+            border: 2px solid transparent;
+
+            p {
+                text-align: left;
+                margin: 1vh 3vh 3vh;
+            }
+        }
+    }
+}

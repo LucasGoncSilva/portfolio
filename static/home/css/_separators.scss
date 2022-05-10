@@ -1,0 +1,101 @@
+// section separator home-skill
+.custom-shape-divider-bottom-1636217397 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1636217397 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 10vh;
+}
+
+.custom-shape-divider-bottom-1636217397 .shape-fill {
+    fill: var(--main_color);
+}
+
+// section separator skill-projetos
+.custom-shape-divider-bottom-1636915784 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -3;
+}
+
+.custom-shape-divider-bottom-1636915784 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 10vh;
+}
+
+.custom-shape-divider-bottom-1636915784 .shape-fill {
+    fill: var(--accent_color_1);
+}
+
+.custom-shape-divider-bottom-1636761791 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -2;
+}
+
+.custom-shape-divider-bottom-1636761791 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 5vh;
+}
+
+.custom-shape-divider-bottom-1636761791 .shape-fill {
+    fill: var(--main_color);
+}
+
+// section separator about-contact
+section:nth-child(5) > fieldset {
+    border: none;
+}
+
+.custom-shape-divider-bottom-1639146972 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1639146972 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 70px;
+}
+
+.custom-shape-divider-bottom-1639146972 .shape-fill {
+    fill: var(--main_color);
+}
+
+// section separator about-contact
+#projetos-sobre {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: -2;
+}

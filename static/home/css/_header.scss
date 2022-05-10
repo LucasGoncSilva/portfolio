@@ -1,0 +1,45 @@
+header {
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 10px 5vw;
+    position: sticky;
+    top: 0;
+    background: #4717f64f;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+
+    img {
+        height: 4rem;
+        filter: drop-shadow(0 0 5px var(--main_color));
+    }
+
+    .mobile-toggle {
+        width: 3rem;
+        height: 3rem;
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto;
+        cursor: pointer;
+
+        div {
+            width: 3rem;
+            height: 2px;
+            background: var(--main_color);
+            transition: 300ms;
+        }
+    }
+
+    &,
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            font-size: 18px;
+            padding: 1em;
+            color: var(--main_color);
+            text-decoration: none;
+        }
+    }
+}
