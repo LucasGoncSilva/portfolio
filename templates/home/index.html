@@ -14,7 +14,6 @@
 {% block content %}
 {% if email_sent %}
 <script>
-    // Swal.fire('E-mail enviado!', 'Seu e-mail foi enviado com sucesso!', 'success')
     Swal.fire({
       icon: 'success',
       iconColor: '#4717f6',
@@ -23,6 +22,8 @@
     })
 </script>
 {% endif %}
+
+
 <header>
 
     <img loading="lazy" src="{% static 'shared/img/icon.svg' %}" alt="lg">
