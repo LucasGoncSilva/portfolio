@@ -14,7 +14,7 @@
 {% block content %}
 <header>
 
-    <img loading="lazy" src="{% static 'home/img/general/icon.svg' %}" alt="lg">
+    <img loading="lazy" src="{% static 'shared/img/icon.svg' %}" alt="lg">
 
     <div class="mobile-toggle">
         <div></div>
@@ -41,7 +41,7 @@
             {% for i in skill_cards %}
 
             <img loading="lazy" src="/static/home/img/skills/{{ i.get_name }}.svg" id="home_{{ i.get_name }}"
-                class="aside_home interval_180 distance" alt="{{ i.get_name }}_logo">
+                class="aside_home" alt="{{ i.get_name }}_logo">
             {% endfor %}
 
         </aside>

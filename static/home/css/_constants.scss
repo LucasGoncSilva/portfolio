@@ -29,8 +29,8 @@ section:nth-child(4) {
 .cards_container {
     display: grid;
     place-items: center;
-    grid-column-gap: 5vw;
-    grid-row-gap: 5vw;
+    grid-column-gap: 3vw;
+    grid-row-gap: 3vw;
     grid-template-columns: auto auto auto;
     width: fit-content;
     margin: 5vh auto 15vh;
@@ -52,7 +52,7 @@ section:nth-child(4) {
 
     figure img {
         aspect-ratio: 1/1;
-        width: 10vw;
+        width: 6vw;
     }
 }
 

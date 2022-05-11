@@ -4,6 +4,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const mobileToggle = document.querySelector('.mobile-toggle')
   const contactForm = document.querySelector('form')
+  const aside = document.querySelector('aside')
+  const imgs = aside.querySelectorAll('img')
 
 
   function toTitleCase(str) {
@@ -32,6 +34,15 @@ window.addEventListener('DOMContentLoaded', () => {
       default:
         return true
     }
+  }
+
+
+  let angle = 360 - 90, dangle = 360 / imgs.length
+
+  for (let i = 0; i < imgs.length; ++i) {
+    let circle = imgs[i]
+    angle += dangle
+    circle.style.transform = `rotate(${angle}deg) translate(${aside.clientWidth / 2}px) rotate(-${angle}deg)`
   }
 
 

@@ -35,7 +35,7 @@ header .mobile-toggle {
     h1,
     h5,
     p {
-        text-shadow: 0.08em 0.08em 0 #0008;
+        text-shadow: 0.08em 0.08em 0 var(--shadow);
     }
 }
 
@@ -48,59 +48,33 @@ header .mobile-toggle {
     animation: down 2s ease-in-out infinite alternate;
 }
 
+@keyframes spin {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+aside,
+.aside_home {
+    animation: spin 3s ease-in-out;
+}
+
 aside {
     aspect-ratio: 1/1;
-    width: 30vw;
+    width: 25vw;
     float: right;
-}
-
-.aside_home {
     position: relative;
-    width: 5vw;
-    animation: swing 8s ease-in-out infinite alternate;
-}
+    margin: calc(100px / 2 + 0px);
+    animation-direction: normal;
 
-#home_html {
-    top: 3vw;
-    transform: rotate(12deg);
-}
-
-#home_css {
-    top: 23vw;
-    left: 3vw;
-    transform: rotate(32deg);
-    animation-delay: 3s;
-}
-
-#home_js {
-    top: 0;
-    transform: rotate(-20deg);
-    animation-delay: 1s;
-}
-
-#home_py {
-    top: 16vw;
-    transform: rotate(2deg);
-    animation-delay: 5s;
-}
-
-#home_sql {
-    top: 3vw;
-    left: 0;
-    transform: rotate(-17deg);
-    animation-delay: 4s;
-}
-
-#home_ink {
-    top: 5vw;
-    left: 8vw;
-    transform: rotate(-27deg);
-    animation-delay: 2s;
-}
-
-@keyframes swing {
-    100% {
-        transform: translateY(2vw);
+    .aside_home {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5vw;
+        margin: calc(-100px / 2);
+        animation-direction: reverse;
+        filter: drop-shadow(.3rem .3rem 0 var(--shadow));
     }
 }
 
