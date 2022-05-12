@@ -15,10 +15,10 @@
 {% if email_sent %}
 <script>
     Swal.fire({
-      icon: 'success',
-      iconColor: '#4717f6',
-      title: 'E-mail enviado!',
-      html: '<p>Seu e-mail foi enviado com sucesso!</p>'
+        icon: 'success',
+        iconColor: '#4717f6',
+        title: 'E-mail enviado!',
+        html: '<p>Seu e-mail foi enviado com sucesso!</p>'
     })
 </script>
 {% endif %}
@@ -51,7 +51,6 @@
         <aside class="interval_1000">
 
             {% for i in skill_cards %}
-
             <img loading="lazy" src="/static/home/img/skills/{{ i.get_name }}.svg" id="home_{{ i.get_name }}"
                 class="aside_home" alt="{{ i.get_name }}_logo">
             {% endfor %}
@@ -157,8 +156,8 @@
                     Swal.fire({
                         title: '{{ i.get_title }}',
                         html: '<p>{{ i.get_description }}</p><br><br>' +
-                            '<a href={{ i.get_project_link %}>Acesse o projeto aqui</a><br>' +
-                            '<a href={{ i.get_github %}>Acesse o GitHub aqui</a>',
+                            '<a href={{ i.get_project_link }}>Acesse o projeto aqui</a><br>' +
+                            '<a href={{ i.get_github }}>Acesse o GitHub aqui</a>',
                         imageUrl: '/static/home/img/projects/{{ i.get_name }}.svg',
                         imageWidth: 120,
                         imageHeight: 120,
