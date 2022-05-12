@@ -23,9 +23,9 @@ class Project:
 
 
 lg = Project('lg', 'Lucas Gonc')
-lg.description = 'Nada mais, nada menos que este próprio website - meu portfólio. Aqui utilizei (com exceção de base de dados SQL) todos os recursos de minhas skills citadas anteriormente. Vale observar que se este projeto necessitasse de base de dados, minha escolha de back-end seria Django por já possuir conexão com base de dados, e não Flask, uma ferramenta mais rápida e simples mas sem conexão nativa.'
+lg.description = 'Nada mais, nada menos que este próprio website - meu portfólio. Construído do zero e utilizando Django - um Framework Python com arquitetura MVC - como fundamento, este site apresenta parte daquilo que sou capaz de fazer.'
 lg.github = 'lucasgonc'
-lg.project_link = 'https://lucasgonc.vercel.app/'
+lg.project_link = 'https://lucasgonc.herokuapp.com/'
 
 
 task_list = Project('task_list', 'Gerenciador de Tarefas')

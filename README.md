@@ -1,10 +1,10 @@
 ![The project's banner](https://github.com/LucasGoncSilva/portfolio/blob/main/readme_banner.svg?raw=true)
 
 
-<h1 align='center'>:notebook: LucasGonc :notebook:</h1>
+<h1 align='center'>:notebook: Lucas Gonc :notebook:</h1>
 
 
-<h4 align='justify'>Using Flask (a Python microframework) for the backend, this is my personal website/portfolio, which will present a bit of who I am and what I can accomplish, along with my most relevant projects.</h4>
+<h4 align='justify'>This project, as clear as it's name suggest, is my personal portfolio and website, which will present a bit of who I am and what I am able to do, along with my most relevant projects.</h4>
 
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/LucasGoncSilva/portfolio?style=for-the-badge)
@@ -26,10 +26,13 @@
 <h2 align='center'>:chart_with_upwards_trend: Project's Status :chart_with_upwards_trend:</h2>
 
 
-<p align='center'>:heavy_check_mark: Successfully completed! :heavy_check_mark:</p>
+<p align='center'>
+<!-- <img align='center' src='https://img.shields.io/badge/-Successfully%20done-0b0?style=for-the-badge'/> -->
+<img align='center' src='https://img.shields.io/badge/-work%20in%20progress...-fb0?style=for-the-badge'/>
+<p>
 
 
-<p align='center'>:link: Check here: https://lucasgonc.vercel.app/ :link:</p>
+<p align='center'>:link: Check here: https://lucasgonc.herokuapp.com :link:</p>
 
 
 <br>
@@ -39,19 +42,15 @@
 <h2 align='center'>:floppy_disk: Applied Technologies :cloud:</h2>
 
 
-<ul>
-<li>Front-end</li>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-</ul>
-<li>Back-end</li>
-<ul>
-<li>Flask (micro-framework Python)</li>
-</ul>
-<li>Hosting</li>
-<ul>
-<li>Vercel</li>
-</ul>
-</ul>
+![HTML logo](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS logo](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Sass logo](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![JavaScript logo](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+<hr>
+
+
+![Django logo](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green)
+<hr>
+
+
+![Heroku logo](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
