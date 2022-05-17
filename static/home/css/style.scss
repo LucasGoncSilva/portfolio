@@ -54,36 +54,34 @@ header .mobile-toggle {
     }
 }
 
-aside,
-.aside_home {
-    animation: spin 3s ease-in-out;
-}
-
 aside {
     aspect-ratio: 1/1;
     width: 25vw;
     float: right;
     position: relative;
     margin: calc(100px / 2 + 0px);
+    animation: spin 30s linear infinite;
     animation-direction: normal;
 
-    .aside_home {
+    .aside_div {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 5vw;
         margin: calc(-100px / 2);
+        animation: spin 3s cubic-bezier(.5,0,.15,1.2);
         animation-direction: reverse;
-        filter: drop-shadow(.3rem .3rem 0 var(--shadow));
+
+        img {
+            animation: spin 30s linear infinite;
+            animation-direction: reverse;
+            width: 5vw;
+            filter: drop-shadow(0.3rem 0.3rem 0 var(--shadow));
+        }
     }
 }
 
 @keyframes down {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
+    to {
         transform: translateY(10vh);
     }
 }
