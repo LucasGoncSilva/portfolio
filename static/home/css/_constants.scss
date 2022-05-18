@@ -9,6 +9,10 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    font-size: 20px;
+}
+
 h1,
 h2,
 h5 {
@@ -55,14 +59,6 @@ section:nth-child(4) {
         aspect-ratio: 1/1;
         width: 6vw;
     }
-}
-
-h2 {
-    font: 900 4vh 'Montserrat Alternates', sans-serif;
-}
-
-p {
-    font-size: 18px;
 }
 
 // SweetAlertJS

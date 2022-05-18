@@ -9,7 +9,8 @@ header {
     z-index: 1;
 
     img {
-        height: 4rem;
+        height: 10vh;
+        max-height: 4rem;
         filter: drop-shadow(0 0 5px var(--main_color));
     }
 
@@ -36,7 +37,6 @@ header {
         justify-content: space-between;
 
         a {
-            font-size: 18px;
             padding: 1em;
             color: var(--main_color);
             text-decoration: none;
