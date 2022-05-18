@@ -40,7 +40,7 @@
         margin: 5vh auto;
         grid-column-gap: 5vh;
         grid-row-gap: 5vh;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
 
         figure img {
             width: 10vh;
@@ -60,6 +60,9 @@
 }
 
 @media only screen and (max-width: 950px) {
+    header nav a {
+        font-size: 4vh;
+    }
     #about {
         & > div {
             display: unset;
@@ -68,6 +71,7 @@
         div div {
             margin-bottom: 3vh;
             border: 2px solid transparent;
+            padding-bottom: 30vh;
 
             p {
                 text-align: left;
