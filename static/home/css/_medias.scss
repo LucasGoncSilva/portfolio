@@ -1,7 +1,4 @@
 @media only screen and (max-width: 600px) {
-    .swal2-icon.swal2-info {
-        border-color: #4717f6 !important;
-    }
 
     header {
         .mobile-toggle {
@@ -10,6 +7,17 @@
 
         nav {
             display: none;
+        }
+    }
+
+    .cards_container {
+        margin: 5vh auto;
+        grid-column-gap: 5vh;
+        grid-row-gap: 5vh;
+        grid-template-columns: auto auto;
+
+        figure img {
+            width: 10vh;
         }
     }
 
@@ -23,7 +31,7 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     nav > a {
         padding: 0.5em;
     }
@@ -34,17 +42,6 @@
 
     aside {
         display: none;
-    }
-
-    .cards_container {
-        margin: 5vh auto;
-        grid-column-gap: 5vh;
-        grid-row-gap: 5vh;
-        grid-template-columns: auto auto auto;
-
-        figure img {
-            width: 10vh;
-        }
     }
 
     #about {
@@ -60,9 +57,16 @@
 }
 
 @media only screen and (max-width: 950px) {
-    header nav a {
-        font-size: 4vh;
+    header {
+        .mobile-toggle {
+            display: grid;
+        }
+
+        nav {
+            display: none;
+        }
     }
+
     #about {
         & > div {
             display: unset;
