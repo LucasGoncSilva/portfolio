@@ -12,11 +12,11 @@ def index(request):
     if request.method == 'POST':
         name = request.POST.get('name')
         email = request.POST.get('email')
-        textarea = request.POST.get('textarea')
+        message = request.POST.get('message')
 
         send_mail(
             'Portfolio Contact Made',
-            f'from: {name}\nemail: {email}\n\n\n{textarea}',
+            f'from: {name}\nemail: {email}\n\n\n{message}',
             EMAIL_HOST_USER,
             [EMAIL_ADM]
         )
