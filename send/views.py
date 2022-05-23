@@ -1,6 +1,5 @@
 import smtplib
 import email.message
-# from django.core.mail import send_mail
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 
@@ -13,17 +12,14 @@ def contact_adm(subject: str, body: str) -> None:
 
     msg['From'] = EMAIL_HOST_USER
     password = EMAIL_HOST_PASSWORD
-
-    msg['Subject'] = subject
-
     msg['To'] = EMAIL_ADM
 
     msg.add_header('Content-Type', 'text/html')
+    msg['Subject'] = subject
     msg.set_payload(body)
 
     s = smtplib.SMTP('smtp.gmail.com: 587')
-    s.starttls()
-    
+    s.starttls()    
     s.login(msg['From'], password)
     s.sendmail(msg['From'], [msg['To']], msg.as_string().encode('utf-8'))
 
