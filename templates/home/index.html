@@ -216,7 +216,7 @@
 
         <h2>Contato</h2>
 
-        <form action="{% url 'home:mail' %}" method="post">
+        <form action="{% url 'send:mail' %}" method="post">
             {% csrf_token %}
 
             <fieldset>

@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'whitenoise',
     # Local
     'home',
+    'send',
 ]
 
 MIDDLEWARE = [
