@@ -1,22 +1,44 @@
-from django.core.mail import send_mail
+import smtplib
+import email.message
+# from django.core.mail import send_mail
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 
-from PORTFOLIO.settings.base import EMAIL_HOST_USER, EMAIL_ADM
+from PORTFOLIO.settings.base import EMAIL_HOST_USER, EMAIL_ADM, EMAIL_HOST_PASSWORD
 
 
 # Create your views here.
+def contact_adm(subject: str, body: str) -> None:
+    msg = email.message.Message()
+
+    msg['From'] = EMAIL_HOST_USER
+    password = EMAIL_HOST_PASSWORD
+
+    msg['Subject'] = subject
+
+    msg['To'] = EMAIL_ADM
+
+    msg.add_header('Content-Type', 'text/html')
+    msg.set_payload(body)
+
+    s = smtplib.SMTP('smtp.gmail.com: 587')
+    s.starttls()
+    
+    s.login(msg['From'], password)
+    s.sendmail(msg['From'], [msg['To']], msg.as_string().encode('utf-8'))
+
+
 def mail(request: object) -> object:
     if request.method == 'POST':
         name = request.POST.get('name')
         email = request.POST.get('email')
-        message = request.POST.get('message')
+        message = str(request.POST.get('message'))
 
-        send_mail(
+        message = message.replace('\n', '<br>')
+
+        contact_adm(
             'Portfolio Contact Made',
-            f'from: {name}\nemail: {email}\n\n\n{message}',
-            EMAIL_HOST_USER,
-            [EMAIL_ADM]
+            f'<p>from: {name}</p><p>email: {email}</p><br>_____<p>{message}</p>_____',
         )
 
         request.session['email_sent'] = True
