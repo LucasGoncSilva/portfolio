@@ -24,8 +24,14 @@ class Project:
 
 lg = Project('lg', 'Lucas Gonc')
 lg.description = 'Nada mais, nada menos que este próprio website - meu portfólio. Construído do zero e utilizando Django - um Framework Python com arquitetura MVC - como fundamento, este site apresenta parte daquilo que sou capaz de fazer.'
-lg.github = 'lucasgonc'
+lg.github = 'portfolio'
 lg.project_link = 'https://lucasgonc.herokuapp.com'
+
+
+lipsum = Project('lipsum', 'Lipsum')
+lipsum.description = 'Gerenciador de senhas online, simples e intuitivo, capaz de armazenar diversos serviços, usuários e senhas, sempre utilizando criptografia. Desta forma, nem mesmo administradores do sistema são capazes de decifrar o que clientes inserem.'
+lipsum.github = 'lipsum'
+lipsum.project_link = 'https://lipsum.herokuapp.com'
 
 
 task_list = Project('task_list', 'Gerenciador de Tarefas')
@@ -40,12 +46,6 @@ passgen.github = 'password_generator'
 passgen.project_link = 'https://gerarsenhas.vercel.app'
 
 
-clock = Project('clock', 'Relógio Digital')
-clock.description = 'Uma aplicação simples que informa o horário em tempo real com menos de um segundo de variação em relação ao horário oficial, o Digital Clock representa exatamente o que seu nome indica. Utiliza tecnologia web com Electron como framework para desktop app.'
-clock.github = 'digital_clock'
-clock.project_link = 'https://simpledigitalclock.vercel.app'
-
-
 encoder = Project('encoder', 'Encoder')
 encoder.description = 'Encoder (codificador em inglês, no contexto de criptografia) é um programa, dispositivo ou equipamento capaz de criptografar informações utilizando uma chave escolhida pelo usuário. Somente será revelada a verdadeira mensagem utilizando exatamente a mesma chave utilizada para gerar o texto codificado, caso contrário, a mensagem revelada será diferente de modo a não haver ligação com a mensagem original, nem mesmo sendo revelada mensagem alguma.'
 encoder.github = 'encoder'
@@ -58,4 +58,4 @@ cypher.github = 'cypher'
 cypher.project_link = 'https://textcypher.vercel.app'
 
 
-project_cards = [lg, task_list, passgen, clock, encoder, cypher]
+project_cards = [lg, lipsum, task_list, passgen, encoder, cypher]

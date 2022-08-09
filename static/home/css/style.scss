@@ -30,6 +30,7 @@ header .mobile-toggle {
         font-size: 2vh;
         font-weight: 400;
         color: var(--accent_color_2);
+        margin-bottom: 3rem;
     }
 
     h1,
@@ -37,15 +38,23 @@ header .mobile-toggle {
     p {
         text-shadow: 0.08em 0.08em 0 var(--shadow);
     }
-}
 
-#home_indicator {
-    width: 0;
-    margin: 13vh auto auto 15vw;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 50px solid var(--accent_color_3);
-    animation: down 2s ease-in-out infinite alternate;
+    a {
+        font-size: 2vh;
+        padding: 1rem;
+        color: var(--main_color);
+        background: var(--secondary_color);
+        border: 2px solid var(--main_color);
+        border-radius: 1rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 300ms;
+        
+        &:hover {
+            color: var(--secondary_color);
+            background: var(--main_color);
+        }
+    }
 }
 
 @keyframes spin {
@@ -77,12 +86,6 @@ aside {
             width: 5vw;
             filter: drop-shadow(0.3rem 0.3rem 0 var(--shadow));
         }
-    }
-}
-
-@keyframes down {
-    to {
-        transform: translateY(10vh);
     }
 }
 

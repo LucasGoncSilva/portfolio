@@ -40,6 +40,12 @@ header {
             padding: 1em;
             color: var(--main_color);
             text-decoration: none;
+            border-radius: 50%;
+            transition: ease-in-out 250ms;
+
+            &:hover {
+                background: var(--accent_color_1);
+            }
         }
     }
 }
