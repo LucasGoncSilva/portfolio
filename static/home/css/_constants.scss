@@ -31,6 +31,69 @@ section:nth-child(4) {
 }
 
 // cards
+.proj_container {
+    display: grid;
+    place-items: center;
+    grid-column-gap: 3vw;
+    grid-row-gap: 3vw;
+    grid-template-columns: auto auto auto;
+    width: fit-content;
+    margin: 5vh auto 15vh;
+}
+
+.proj {
+    font-family: 'Ubuntu';
+    background: var(--main_color);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto;
+    width: 25vw;
+    border: 0.2vw solid;
+    border-image: linear-gradient(135deg, var(--secondary_color), transparent 70%) 1;
+    z-index: 5;
+    transition: 400ms ease-in-out;
+
+    & > img {
+        margin: 0 auto;
+        width: 20vw;
+    }
+
+    div {
+        font-family: 'Ubuntu';
+        display: flexbox;
+        align-content: center;
+        justify-content: space-evenly;
+
+        img {
+            height: 3rem;
+            transform: translateY(0.5rem);
+        }
+    }
+
+    .proj_links {
+        width: 100%;
+        display: flexbox;
+        justify-content: space-between;
+        align-content: center;
+
+        a {
+            text-decoration: none;
+            margin: auto;
+
+            svg {
+                height: 2.4rem;
+                width: 4rem;
+            }
+        }
+    }
+
+    &:hover {
+        border-image: linear-gradient(-45deg, var(--secondary_color), transparent 70%) 1;
+        background: var(--accent_color_2);
+        cursor: pointer;
+    }
+}
+
 .cards_container {
     display: grid;
     place-items: center;
