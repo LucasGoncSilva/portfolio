@@ -1,14 +1,14 @@
 {
   "builds": [
     {
-      "src": "JASPER/wsgi.py",
+      "src": "PORTFOLIO/wsgi.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "JASPER/wsgi.py"
+      "dest": "PORTFOLIO/wsgi.py"
     }
   ]
 }

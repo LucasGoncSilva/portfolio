@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'PORTFOLIO.settings.base')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'PORTFOLIO.settings.deploy')
 
-application = get_asgi_application()
+app = application = get_asgi_application()
