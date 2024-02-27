@@ -3,8 +3,8 @@ header {
     padding: 10px 5vw;
     position: sticky;
     top: 0;
-    background: #4717f64f;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    background: #101010aa;
+    // box-shadow: 0 0 30px #4717f6;
     backdrop-filter: blur(5px);
     z-index: 10;
 
@@ -38,13 +38,12 @@ header {
 
         a {
             padding: 1em;
-            color: var(--main_color);
+            color: var(--secondary_color);
             text-decoration: none;
-            border-radius: 50%;
             transition: ease-in-out 250ms;
 
             &:hover {
-                background: var(--accent_color_1);
+                color: var(--accent_color_1);
             }
         }
     }
