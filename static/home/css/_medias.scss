@@ -9,18 +9,8 @@
         }
     }
 
-    .cards_container {
-        margin: 5vh auto;
-        grid-column-gap: 5vh;
-        grid-row-gap: 5vh;
-        grid-template-columns: auto auto;
 
-        figure img {
-            width: 10vh;
-        }
-    }
-
-    .proj_container {
+    .proj-container {
         grid-template-columns: auto;
     }
 
@@ -56,7 +46,7 @@
         display: none;
     }
 
-    .proj_container {
+    .proj-container {
         grid-template-columns: auto;
     }
 
@@ -91,7 +81,7 @@
         }
     }
 
-    .proj_container {
+    .proj-container {
         grid-template-columns: auto;
     }
 
@@ -121,7 +111,7 @@
 }
 
 @media only screen and (max-width: 1550px) {
-    .proj_container {
+    .proj-container {
         grid-template-columns: auto;
     }
 

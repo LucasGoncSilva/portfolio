@@ -10,13 +10,13 @@ html {
 }
 
 body {
-    font-size: 20px;
+    font-size: 18px;
+    background: var(--main-color);
 }
 
-h1,
-h2,
-h5 {
-    font-family: 'Montserrat Alternates', sans-serif;
+h3 {
+    color: var(--accent-color) !important;
+    margin-bottom: 1rem !important;
 }
 
 section:nth-child(2),
@@ -24,117 +24,51 @@ section:nth-child(3),
 section:nth-child(4) {
     height: fit-content;
     padding-bottom: 15vh;
-    padding-top: 20vh;
-    text-align: center;
-    color: var(--secondary_color);
+    margin: auto 15vw;
+    color: var(--secondary-color);
+
+    p {
+        margin-bottom: 1rem;
+        color: var(--text-gray);
+
+        span {
+            color: var(--secondary-color);
+        }
+    }
+}
+
+// shape dividers
+.custom-shape-divider-top-1709773768 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1709773768 svg {
     position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
 }
 
-// cards
-.proj_container {
-    display: grid;
-    place-items: center;
-    grid-column-gap: 3vw;
-    grid-row-gap: 3vw;
-    grid-template-columns: auto auto auto;
-    width: fit-content;
-    margin: 5vh auto 15vh;
-}
-
-.proj {
-    font-family: 'Ubuntu';
-    background: var(--main_color);
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: auto;
-    width: 25vw;
-    border: 0.2vw solid;
-    border-image: linear-gradient(135deg, var(--secondary_color), transparent 70%) 1;
-    z-index: 5;
-    transition: 400ms ease-in-out;
-
-    & > img {
-        margin: 0 auto;
-        width: 20vw;
-    }
-
-    div {
-        font-family: 'Ubuntu';
-        display: flexbox;
-        align-content: center;
-        justify-content: space-evenly;
-
-        img {
-            height: 3rem;
-            transform: translateY(0.5rem);
-        }
-    }
-
-    .proj_links {
-        width: 100%;
-        display: flexbox;
-        justify-content: space-between;
-        align-content: center;
-
-        a {
-            text-decoration: none;
-            margin: auto;
-
-            svg {
-                height: 2.4rem;
-                width: 4rem;
-            }
-        }
-    }
-
-    &:hover {
-        border-image: linear-gradient(-45deg, var(--secondary_color), transparent 70%) 1;
-        background: var(--accent_color_2);
-        cursor: pointer;
-    }
-}
-
-.cards_container {
-    display: grid;
-    place-items: center;
-    grid-column-gap: 3vw;
-    grid-row-gap: 3vw;
-    grid-template-columns: auto auto auto;
-    width: fit-content;
-    margin: 5vh auto 15vh;
-
-    div {
-        max-width: fit-content;
-        padding: 3vh;
-        transition: 400ms ease-in-out;
-        border: 0.2vw solid;
-        border-image: linear-gradient(135deg, var(--secondary_color), transparent 70%) 1;
-        border-top-left-radius: 40px;
-
-        &:hover {
-            border-image: linear-gradient(-45deg, var(--secondary_color), transparent 70%) 1;
-            background: var(--accent_color_3);
-            cursor: pointer;
-        }
-    }
-
-    figure img {
-        aspect-ratio: 1/1;
-        width: 6vw;
-    }
+.custom-shape-divider-top-1709773768 .shape-fill {
+    fill: var(--card-background);
 }
 
 // SweetAlertJS
 .swal2-popup h2 {
-    color: var(--secondary_color);
+    color: var(--secondary-color);
 }
 
 .swal2-popup p {
-    color: var(--accent_color_1);
+    color: var(--accent-color);
 }
 
 .swal2-popup a {
-    color: var(--accent_color_1);
+    color: var(--accent-color);
     text-decoration: underline;
 }
 
@@ -144,16 +78,14 @@ section:nth-child(4) {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--accent_color_2);
-    border-radius: 10px 0 0 10px;
+    background: var(--main-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--accent_color_1);
-    border-radius: 10px 0 0 10px;
+    background: var(--accent-color);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--main_color);
-    box-shadow: inset 0 0 20px var(--accent_color_1);
+    background: var(--main-color);
+    box-shadow: inset 0 0 20px var(--accent-color);
 }

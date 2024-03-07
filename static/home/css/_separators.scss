@@ -1,23 +1,8 @@
 // section separator home-skill
-.custom-shape-divider-bottom-1636217397 {
+#home-sep {
     position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1636217397 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 10vh;
-}
-
-.custom-shape-divider-bottom-1636217397 .shape-fill {
-    fill: var(--main_color);
+    left: -8vh;
+    z-index: -1;
 }
 
 // section separator skill-projetos
@@ -40,7 +25,7 @@
 }
 
 .custom-shape-divider-bottom-1636915784 .shape-fill {
-    fill: var(--accent_color_1);
+    fill: var(--accent-color);
 }
 
 .custom-shape-divider-bottom-1636761791 {
@@ -62,7 +47,7 @@
 }
 
 .custom-shape-divider-bottom-1636761791 .shape-fill {
-    fill: var(--main_color);
+    fill: var(--main-color);
 }
 
 // section separator about-contact
@@ -87,7 +72,7 @@ section:nth-child(5) > fieldset {
 }
 
 .custom-shape-divider-bottom-1639146972 .shape-fill {
-    fill: var(--main_color);
+    fill: var(--main-color);
 }
 
 // section separator about-contact
