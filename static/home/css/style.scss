@@ -8,8 +8,7 @@ header .mobile-toggle {
 
 /* home */
 #home {
-    height: 72vh;
-    // height: fit-content;
+    height: 65vh;
     position: relative;
     color: var(--secondary-color);
     padding: calc(8vh + 84px) 8vh 0;
@@ -21,10 +20,6 @@ header .mobile-toggle {
         align-items: center;
         justify-content: space-evenly;
         flex-direction: row-reverse;
-
-        aside {
-            opacity: 0.3;
-        }
 
         #home-landing-text {
             max-width: 40vw;
@@ -156,19 +151,69 @@ aside {
     }
 }
 
+// XP
+#XP {
+    background-color: var(--card-background);
+
+    .XP-cards-container {
+        width: fit-content;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: auto auto auto;
+        margin: 5rem auto 0;
+
+        .XP-card {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            padding: 2rem;
+            background-color: var(--dark-gray);
+            border: 2px solid var(--medium-gray);
+            transition: 300ms;
+            width: 20rem;
+            height: 12rem;
+
+            .img-h2 {
+                display: inline-flex;
+                align-items: center;
+                margin-bottom: 1rem;
+
+                img {
+                    aspect-ratio: 1/1;
+                    width: 50px;
+                    margin-right: 1rem;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: var(--secondary-color);
+                margin-top: 1rem;
+                transition: 300ms;
+
+                &:hover {
+                    color: var(--accent-color);
+                }
+            }
+
+            &:hover {
+                border-color: var(--secondary-color);
+            }
+        }
+    }
+}
+
 /* contact */
 #contact {
     height: fit-content;
     padding-bottom: 15vh;
-    margin: auto;
-    width: 100vw;
-    text-align: center;
     color: var(--text-gray);
     background: var(--main-color);
-    position: relative;
 
     form {
-        margin: 10rem auto 0;
+        text-align: center;
+        margin: 5rem auto 0;
         width: fit-content;
         height: fit-content;
 
@@ -209,24 +254,24 @@ aside {
             textarea:hover {
                 background-color: var(--medium-gray);
             }
+
+            input[type='submit'] {
+                font:
+                    400 20px 'Ubuntu',
+                    sans-serif;
+                background: var(--medium-gray);
+                color: var(--text-gray);
+                padding: 10px 40px;
+                transition: 300ms;
+                cursor: pointer;
+                border: 2px solid var(--light-gray);
+
+                &:hover {
+                    color: var(--secondary-color);
+                    border-color: var(--secondary-color);
+                }
+            }
         }
-    }
-
-    form > fieldset input[type='submit'] {
-        font:
-            400 20px 'Ubuntu',
-            sans-serif;
-        background: var(--main-color);
-        color: var(--secondary-color);
-        padding: 10px 40px;
-        transition: 300ms;
-    }
-
-    form > fieldset input[type='submit']:hover {
-        cursor: pointer;
-        padding: 10px 60px;
-        background: var(--secondary-color);
-        color: var(--main-color);
     }
 }
 
