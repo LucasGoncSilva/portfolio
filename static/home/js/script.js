@@ -8,6 +8,8 @@ window.addEventListener("DOMContentLoaded", () => {
   const aside = document.querySelector("aside");
   const asideDivs = aside.querySelectorAll("div");
 
+  const descriptionDiv = document.getElementById("description");
+
   function toTitleCase(str) {
     return str.replace(/\w\S*/g, function (txt) {
       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
@@ -76,4 +78,19 @@ window.addEventListener("DOMContentLoaded", () => {
       return false;
     }
   };
+
+  document.querySelectorAll(".skill-card").forEach((e) => {
+    const skillTitle = e.dataset.title;
+    const skillDescription = e.dataset.description;
+
+    e.addEventListener("mouseover", () => {
+      descriptionDiv.innerHTML = `<h3>${skillTitle}</h3><p>${skillDescription}</p>`;
+    });
+
+    e.addEventListener("mouseout", (e) => {
+      if (e.tagName !== "img") {
+        descriptionDiv.innerHTML = "<h3>&#12288;</h3><p>Para mais detalhes passe o mouse por cima do card</p>";
+      }
+    });
+  });
 });

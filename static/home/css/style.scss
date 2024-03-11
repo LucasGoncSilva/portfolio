@@ -35,20 +35,22 @@ header .mobile-toggle {
             }
 
             a {
-                font-size: 1.2rem;
-                padding: 1rem;
+                font-size: 5rem;
+                padding-bottom: 1rem;
                 border-radius: 0.5rem;
                 text-decoration: none;
                 cursor: pointer;
                 transition: 600ms;
-                border: 2px solid var(--accent-color);
-                color: var(--main-color);
-                background: var(--accent-color);
+                color: var(--accent-color);
+                background: var(--main-color);
 
                 &:hover {
-                    box-shadow:
-                        inset 0 0 40px 40px var(--accent-color),
-                        0 0 40px var(--accent-color);
+                    text-shadow:
+                        var(--accent-color) 0 0 5px,
+                        var(--accent-color) 0 0 10px,
+                        var(--accent-color) 0 0 15px,
+                        var(--accent-color) 0 0 20px,
+                        var(--accent-color) 0 0 25px;
                 }
             }
         }
@@ -172,7 +174,7 @@ aside {
             border: 2px solid var(--medium-gray);
             transition: 300ms;
             width: 20rem;
-            height: 12rem;
+            height: 10rem;
 
             .img-h2 {
                 display: inline-flex;
@@ -199,6 +201,56 @@ aside {
 
             &:hover {
                 border-color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+// skills
+#skills {
+    background-color: var(--card-background);
+
+    & > div {
+        margin: auto;
+        width: fit-content;
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 2rem;
+
+        #description {
+            width: 30rem;
+            height: 20rem;
+            margin: auto;
+
+            p {
+                color: var(--text-gray);
+            }
+        }
+
+        #skills-cards-container {
+            display: grid;
+            place-items: center;
+            grid-template-columns: auto auto auto;
+            width: fit-content;
+            gap: 1rem;
+
+            .skill-card {
+                background-color: var(--dark-gray);
+                width: fit-content;
+                border: 2px solid var(--medium-gray);
+                filter: grayscale(1);
+                transition: 300ms;
+
+                img {
+                    margin: 2rem;
+                    aspect-ratio: 1/1;
+                    width: 4rem;
+                }
+
+                &:hover {
+                    filter: grayscale(0);
+                    border-color: var(--secondary-color);
+                }
             }
         }
     }

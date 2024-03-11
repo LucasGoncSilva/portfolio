@@ -35,10 +35,10 @@
     </div>
 
     <nav>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projetos</a>
-        <a href="#about">Sobre</a>
-        <a href="#contact">Contato</a>
+        <a href="#whoami-anchor">Quem sou?</a>
+        <a href="#XP-anchor">Experiencies</a>
+        <a href="#skills-anchor">Expertises</a>
+        <a href="#contact-anchor">Contato</a>
     </nav>
 
 </header>
@@ -50,10 +50,10 @@
         <div id="home-landing-box">
             <aside id="home-landing-techs">
 
-                {% for i in skill_cards %}
+                {% for skill in skill_cards %}
                 <div class="aside-div">
-                    <img loading="lazy" src="/static/home/img/skills/{{ i.get_name }}.svg" id="home-{{ i.get_name }}"
-                        class="aside-img" alt="{{ i.get_name }} logo">
+                    <img loading="lazy" src="/static/home/img/skills/{{ skill.name }}.svg" id="home-{{ skill.name }}"
+                        class="aside-img" alt="{{ skill.name }} logo">
                 </div>
                 {% endfor %}
 
@@ -64,13 +64,15 @@
                     <span>modernos</span>.
                 </h1>
 
-                <a class=" delay-3000" href="#skills">Como e Porquê</a>
+                <a class=" delay-3000" href="#whoami-anchor">&darr;</a>
             </div>
         </div>
     </section>
 
 
     <section id="whoami">
+        <div id="whoami-anchor" class="anchor"></div>
+
         <div id="whoami-container">
             <img src="https://picsum.photos/800" alt="">
 
@@ -148,71 +150,50 @@
 
 
     <section id="XP">
+        <div id="XP-anchor" class="anchor"></div>
+
         <h1><span>&gt;</span> EXPERIENCIES</h1>
 
         <div class="XP-cards-container">
+            {% for project in project_cards %}
             <div class="XP-card">
                 <div>
                     <div class="img-h2">
-                        <img src="https://picsum.photos/800" alt="">
-
-                        <h2>Project Name</h2>
+                        <h2>{{ project.name }}</h2>
                     </div>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur obcaecati libero ducimus assumenda ullam quisquam, cumque, itaque magnam fugit, hic ex amet soluta animi aperiam? Excepturi ad delectus maiores?</p>
+                    <p>{{ project.description }}</p>
                 </div>
 
-                <a href="#">Acessar</a>
+                <a href="{{ project.url }}">Acessar</a>
             </div>
-            <div class="XP-card">
-                <div>
-                    <div class="img-h2">
-                        <img src="https://picsum.photos/800" alt="">
+            {% endfor %}
+        </div>
 
-                        <h2>Project Name</h2>
-                    </div>
+        <hr>
+    </section>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
 
-                <a href="#">Acessar</a>
+    <section id="skills">
+        <div id="skills-anchor" class="anchor"></div>
+
+        <h1><span>&gt;</span> EXPERTISES</h1>
+
+        <div>
+            <div id="description">
+                <h3>&#12288;</h3>
+                <p>Para mais detalhes passe o mouse por cima do card</p>
             </div>
-            <div class="XP-card">
-                <div>
-                    <div class="img-h2">
-                        <img src="https://picsum.photos/800" alt="">
 
-                        <h2>Project Name</h2>
-                    </div>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-
-                <a href="#">Acessar</a>
-            </div><div class="XP-card">
-                <div>
-                    <div class="img-h2">
-                        <img src="https://picsum.photos/800" alt="">
-
-                        <h2>Project Name</h2>
-                    </div>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-
-                <a href="#">Acessar</a>
-            </div><div class="XP-card">
-                <div>
-                    <div class="img-h2">
-                        <img src="https://picsum.photos/800" alt="">
-
-                        <h2>Project Name</h2>
-                    </div>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-
-                <a href="#">Acessar</a>
+            <div id="skills-cards-container">
+                {% for skill in skill_cards %}
+                <a href="{{ skill.url }}" class="skill-card skill-data" data-title="{{ skill.title }}"
+                    data-description="{{ skill.description }}">
+                    <img loading="lazy" src="/static/home/img/skills/{{ skill.name }}.svg" class="skill-data"
+                        alt="{{ skill.name }} logo" data-title="{{ skill.title }}"
+                        data-description="{{ skill.description }}">
+                </a>
+                {% endfor %}
             </div>
         </div>
     </section>
@@ -229,13 +210,15 @@
 
 
     <section id="contact">
+        <div id="contact-anchor" class="anchor"></div>
+
         <h1><span>&gt;</span> CONTATO</h1>
 
         <form action="{% url 'send:mail' %}" method="post">
             {% csrf_token %}
 
             <fieldset>
-                <h3>Fale comigo</h3>
+                <h3>Enviar e-mail</h3>
 
                 <label for="name">Nome</label><br>
                 <input type="text" id="name" name="name" placeholder="Joãozinho da Silva Santos" required><br><br>
