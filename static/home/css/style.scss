@@ -290,6 +290,7 @@ aside {
 
             input:not(input[type='submit']),
             textarea {
+                color: var(--secondary-color);
                 background-color: var(--dark-gray);
                 border: 2px solid var(--medium-gray);
                 padding: 1rem;
