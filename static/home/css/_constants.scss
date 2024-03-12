@@ -32,7 +32,7 @@ section {
 
     & > hr {
         border: 1px solid var(--medium-gray);
-        margin: 5rem auto 0;
+        margin: 10rem auto 0;
         width: 50%;
     }
 }
@@ -41,8 +41,8 @@ section {
 #XP,
 #contact {
     height: fit-content;
-    padding-bottom: 5vh;
     color: var(--secondary-color);
+    padding-bottom: 5rem;
     padding-top: 5rem;
 
     p {
@@ -52,6 +52,14 @@ section {
         span {
             color: var(--secondary-color);
         }
+    }
+}
+
+#XP,
+#skills,
+#contact {
+    h1 {
+        margin-top: 5rem;
     }
 }
 
@@ -109,17 +117,21 @@ section {
 }
 
 // SweetAlertJS
-.swal2-popup h2 {
-    color: var(--secondary-color);
-}
+.swal2-popup {
+    background-color: var(--card-background);
 
-.swal2-popup p {
-    color: var(--accent-color);
-}
+    h2 {
+        color: var(--secondary-color);
+    }
 
-.swal2-popup a {
-    color: var(--accent-color);
-    text-decoration: underline;
+    p {
+        color: var(--text-gray);
+    }
+
+    a {
+        color: var(--accent-color);
+        text-decoration: underline;
+    }
 }
 
 // Scrollbar

@@ -157,7 +157,7 @@ aside {
 #XP {
     background-color: var(--card-background);
 
-    .XP-cards-container {
+    #XP-cards-container {
         width: fit-content;
         display: grid;
         gap: 2rem;
@@ -240,9 +240,9 @@ aside {
                 border: 2px solid var(--medium-gray);
                 filter: grayscale(1);
                 transition: 300ms;
+                padding: 2rem;
 
                 img {
-                    margin: 2rem;
                     aspect-ratio: 1/1;
                     width: 4rem;
                 }
@@ -259,7 +259,7 @@ aside {
 /* contact */
 #contact {
     height: fit-content;
-    padding-bottom: 15vh;
+    padding-bottom: 5rem;
     color: var(--text-gray);
     background: var(--main-color);
 
