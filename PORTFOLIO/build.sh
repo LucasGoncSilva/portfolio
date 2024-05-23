@@ -1,6 +1,3 @@
-# Enters project's dir
-cd PORTFOLIO
-
 # Sets to exit on error
 set -o errexit
 
