@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 18px;
+    background: var(--main-color);
+}
+
+h3 {
+    color: var(--accent-color) !important;
+    margin-bottom: 1rem !important;
+}
+
+section {
+    & > h1 {
+        font-size: 2.25rem;
+        margin-left: 20vw;
+        color: var(--secondary-color);
+
+        span {
+            color: var(--accent-color);
+        }
+    }
+
+    & > hr {
+        border: 1px solid var(--medium-gray);
+        margin: 10rem auto 0;
+        width: 50%;
+    }
+}
+
+#whoami,
+#XP,
+#contact {
+    height: fit-content;
+    color: var(--secondary-color);
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+
+    p {
+        margin-bottom: 1rem;
+        color: var(--text-gray);
+
+        span {
+            color: var(--secondary-color);
+        }
+    }
+}
+
+#XP,
+#skills,
+#contact {
+    h1 {
+        margin-top: 5rem;
+    }
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -10rem;
+    visibility: hidden;
+}
+
+// shape dividers
+.section-dividers {
+    position: relative;
+    margin: 0;
+}
+
+.custom-shape-divider-top-1709823995 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1709823995 svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-top-1709823995 .shape-fill {
+    fill: var(--main-color);
+}
+
+.custom-shape-divider-top-1709773768 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1709773768 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-top-1709773768 .shape-fill {
+    fill: var(--card-background);
+}
+
+// SweetAlertJS
+.swal2-popup {
+    background-color: var(--card-background);
+
+    h2 {
+        color: var(--secondary-color);
+    }
+
+    p {
+        color: var(--text-gray);
+    }
+
+    a {
+        color: var(--accent-color);
+        text-decoration: underline;
+    }
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--main-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color);
+    box-shadow: inset 0 0 20px var(--accent-color);
+}

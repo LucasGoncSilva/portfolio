@@ -1,0 +1,14 @@
+name: Daily DB Wake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  curl_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Executar comando curl
+        run: |
+          curl localhost:8000/send/wake -v

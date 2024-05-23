@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="120"
+   height="120"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="django.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="7.0666667"
+     inkscape:cx="60"
+     inkscape:cy="60"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <title
+     id="title2">file_type_django</title>
+  <g
+     id="g834"
+     transform="matrix(5,0,0,5,-15,-20)"
+     style="stroke-width:0.2;fill:#8776da;fill-opacity:1">
+    <path
+       d="M 14.135,4 H 18.1 v 18.169 a 26.218,26.218 0 0 1 -5.143,0.535 C 8.115,22.699 5.595,20.536 5.595,16.382 c 0,-4 2.673,-6.6 6.816,-6.6 a 6.448,6.448 0 0 1 1.724,0.2 z m 0,9.142 a 3.992,3.992 0 0 0 -1.337,-0.2 c -2,0 -3.163,1.223 -3.163,3.366 0,2.087 1.107,3.239 3.138,3.239 a 9.355,9.355 0 0 0 1.362,-0.1 v -6.3 z"
+       style="fill:#8776da;stroke-width:0.2;fill-opacity:1"
+       id="path4" />
+    <path
+       d="m 24.4,10.059 v 9.1 c 0,3.133 -0.235,4.639 -0.923,5.938 A 6.316,6.316 0 0 1 20.237,28 L 16.559,26.267 A 5.708,5.708 0 0 0 19.7,23.638 c 0.566,-1.121 0.745,-2.42 0.745,-5.837 v -7.742 z"
+       style="fill:#8776da;stroke-width:0.2;fill-opacity:1"
+       id="path6" />
+    <rect
+       x="20.441"
+       y="4.02"
+       width="3.964"
+       height="4.0279999"
+       style="fill:#8776da;stroke-width:0.2;fill-opacity:1"
+       id="rect8" />
+  </g>
+  <metadata
+     id="metadata836">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>file_type_django</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

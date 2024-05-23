@@ -1,0 +1,434 @@
+@media only screen and (max-width: 1300px) {
+    * {
+        font-size: unset;
+    }
+
+    #home {
+        height: fit-content;
+        padding: 30vh 10vw 0;
+
+        #home-landing-box {
+            display: grid;
+            place-items: center;
+            margin: 0;
+
+            #home-landing-text {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            #home-landing-techs {
+                display: none;
+            }
+        }
+    }
+
+    #whoami {
+        display: grid;
+        place-items: center;
+
+        #whoami-container {
+            display: inline-flex;
+            flex-direction: column;
+            width: 80vw;
+            margin: auto;
+
+            img {
+                max-width: 80vw;
+            }
+
+            div {
+                width: 100%;
+
+                h3 {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    #XP {
+        padding-bottom: 1rem;
+
+        #XP-cards-container {
+            grid-template-columns: auto;
+            row-gap: 2rem;
+            width: 90%;
+
+            .XP-card {
+                width: 90%;
+                margin: auto;
+                height: 8rem;
+            }
+        }
+    }
+
+    #skills {
+        & > div {
+            grid-template-columns: auto;
+
+            #description {
+                display: none;
+            }
+
+            #skills-cards-container {
+                margin-top: 2rem;
+
+                .skill-card {
+                    padding: 3rem;
+                }
+            }
+        }
+    }
+
+    #contact {
+        form {
+            fieldset {
+                padding: 1rem;
+            }
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+
+        div {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    * {
+        font-size: unset;
+    }
+
+    header {
+        .mobile-toggle {
+            display: grid;
+        }
+
+        nav {
+            display: none;
+        }
+    }
+
+    #home {
+        height: fit-content;
+        padding: 30vh 10vw 0;
+
+        #home-landing-box {
+            display: grid;
+            place-items: center;
+            margin: 0;
+
+            #home-landing-text {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            #home-landing-techs {
+                display: none;
+            }
+        }
+    }
+
+    #whoami {
+        display: grid;
+        place-items: center;
+
+        #whoami-container {
+            display: inline-flex;
+            flex-direction: column;
+            width: 80vw;
+            margin: auto;
+
+            img {
+                max-width: 80vw;
+            }
+
+            div {
+                width: 100%;
+
+                h3 {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    #XP {
+        padding-bottom: 1rem;
+
+        #XP-cards-container {
+            grid-template-columns: auto;
+            row-gap: 2rem;
+            width: 90%;
+
+            .XP-card {
+                width: 90%;
+                height: 8rem;
+            }
+        }
+    }
+
+    #skills {
+        & > div {
+            grid-template-columns: auto;
+
+            #description {
+                display: none;
+            }
+
+            #skills-cards-container {
+                margin-top: 2rem;
+
+                .skill-card {
+                    padding: 3rem;
+                }
+            }
+        }
+    }
+
+    #contact {
+        form {
+            fieldset {
+                padding: 1rem;
+            }
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+
+        div {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: unset;
+    }
+
+    body {
+        max-width: 100%;
+    }
+
+    header {
+        .mobile-toggle {
+            display: grid;
+        }
+
+        nav {
+            display: none;
+        }
+    }
+
+    #home {
+        height: fit-content;
+        padding: 30vh 10vw 0;
+
+        #home-landing-box {
+            display: grid;
+            place-items: center;
+            margin: 0;
+
+            #home-landing-text {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            #home-landing-techs {
+                display: none;
+            }
+        }
+    }
+
+    #whoami {
+        display: grid;
+        place-items: center;
+
+        #whoami-container {
+            display: inline-flex;
+            flex-direction: column;
+            width: 80vw;
+            margin: auto;
+
+            img {
+                max-width: 80vw;
+            }
+
+            div {
+                width: 100%;
+
+                h3 {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    #XP {
+        padding-bottom: 1rem;
+
+        #XP-cards-container {
+            grid-template-columns: auto;
+            row-gap: 2rem;
+            width: 90%;
+
+            .XP-card {
+                width: 90%;
+                height: 8rem;
+            }
+        }
+    }
+
+    #skills {
+        & > div {
+            grid-template-columns: auto;
+
+            #description {
+                display: none;
+            }
+
+            #skills-cards-container {
+                margin-top: 2rem;
+
+                .skill-card {
+                    padding: 3rem;
+                }
+            }
+        }
+    }
+
+    #contact {
+        form {
+            fieldset {
+                padding: 1rem;
+            }
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+
+        div {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        font-size: unset;
+    }
+
+    header {
+        .mobile-toggle {
+            display: grid;
+        }
+
+        nav {
+            display: none;
+        }
+    }
+
+    #home {
+        height: fit-content;
+        padding: 30vh 10vw 0;
+
+        #home-landing-box {
+            display: grid;
+            place-items: center;
+            margin: 0;
+
+            #home-landing-text {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            #home-landing-techs {
+                display: none;
+            }
+        }
+    }
+
+    #whoami {
+        display: grid;
+        place-items: center;
+
+        #whoami-container {
+            display: inline-flex;
+            flex-direction: column;
+            width: 80vw;
+            margin: auto;
+
+            img {
+                max-width: 80vw;
+            }
+
+            div {
+                width: 100%;
+
+                h3 {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    #XP {
+        padding-bottom: 1rem;
+
+        #XP-cards-container {
+            grid-template-columns: auto;
+            row-gap: 2rem;
+
+            .XP-card {
+                padding: 1rem;
+                height: 15rem;
+            }
+        }
+    }
+
+    #skills {
+        & > div {
+            grid-template-columns: auto;
+
+            #description {
+                display: none;
+            }
+
+            #skills-cards-container {
+                grid-template-columns: auto auto;
+                margin-top: 2rem;
+
+                .skill-card {
+                    padding: 3rem;
+                }
+            }
+        }
+    }
+
+    #contact {
+        form {
+            fieldset {
+                padding: 1rem;
+            }
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+
+        div {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Erro 404 | Alguém parece estar passeando por caminhos tortuosos... {% endblock %}
+
+
+{% block imports %}
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Ubuntu&display=swap');
+
+    * {
+        margin: 0;
+    }
+
+    html,
+    body {
+        background: var(--main-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10vh;
+        height: 80vh;
+    }
+
+    h1 {
+        color: var(--secondary-color);
+        font: 900 20vw 'Orbitron', sans-serif;
+    }
+
+    img {
+        aspect-ratio: 1/1;
+        width: 16vw;
+    }
+
+    h3 {
+        color: var(--accent-color);
+        font: 20px 'Ubuntu', sans-serif;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+{% endblock %}
+
+
+{% block content %}
+<h3>Não encontramos a página</h3>
+<h3>que você procura...</h3>
+
+<div>
+    <h1>4</h1>
+    <img src="{% static 'img/errors/404.svg' %}" alt="404">
+    <h1>4</h1>
+</div>
+
+<h3>O caminho de volta fica <a href="/">aqui</a>.</h3>
+{% endblock %}
