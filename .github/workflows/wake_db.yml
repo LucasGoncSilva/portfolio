@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Executar comando curl
         run: |
-          curl localhost:8000/send/wake -v
+          curl lucasgonc.onrender.com/send/wake -v
