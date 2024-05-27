@@ -1,0 +1,24 @@
+{
+  "builds": [
+    {
+      "src": "CORE/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "300mb"
+      }
+    },
+    {
+      "src": "build.sh",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "staticfiles"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "CORE/wsgi.py"
+    }
+  ]
+}
