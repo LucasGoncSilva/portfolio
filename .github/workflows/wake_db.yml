@@ -2,7 +2,7 @@ name: DB Wake
 
 on:
   schedule:
-    - cron: "*/25 * * * *"
+    - cron: "0 * * * *"
 
 jobs:
   curl_job:
