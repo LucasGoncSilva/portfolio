@@ -12,8 +12,12 @@ def index(req: HttpRequest) -> HttpResponse:
     else:
         email_sent = False
 
-    return render(req, 'home/index.html', {
-        'skill_cards': skill_cards,
-        'project_cards': project_cards,
-        'email_sent': email_sent,
-    })
+    return render(
+        req,
+        'home/index.html',
+        {
+            'skill_cards': skill_cards,
+            'project_cards': project_cards,
+            'email_sent': email_sent,
+        },
+    )

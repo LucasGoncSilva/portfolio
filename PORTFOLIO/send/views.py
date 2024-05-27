@@ -21,7 +21,7 @@ def contact_adm(subject: str, body: str) -> None:
     msg.set_payload(body)
 
     s: SMTP = SMTP('smtp.gmail.com: 587')
-    s.starttls()    
+    s.starttls()
     s.login(msg['From'], password)
     s.sendmail(msg['From'], [msg['To']], msg.as_string().encode('utf-8'))
 
@@ -30,7 +30,12 @@ def mail(req: HttpRequest) -> HttpResponse:
     if req.method == 'POST':
         name: str = str(req.POST.get('name'))
         email: str = str(req.POST.get('email'))
-        message: str = str(req.POST.get('message')).replace('\n', '<br>').replace('<', '&lt;').replace('>', '&gt;')
+        message: str = (
+            str(req.POST.get('message'))
+            .replace('\n', '<br>')
+            .replace('<', '&lt;')
+            .replace('>', '&gt;')
+        )
 
         contact_adm(
             'Portfolio Contact Made',
