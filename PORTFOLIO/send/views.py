@@ -12,39 +12,39 @@ from send.models import WakeDatabase
 def contact_adm(subject: str, body: str) -> None:
     msg: Message = Message()
 
-    msg['From'] = str(settings.EMAIL_HOST_USER)
+    msg["From"] = str(settings.EMAIL_HOST_USER)
     password: str = str(settings.EMAIL_HOST_PASSWORD)
-    msg['To'] = str(settings.EMAIL_ADM)
+    msg["To"] = str(settings.EMAIL_ADM)
 
-    msg.add_header('Content-Type', 'text/html')
-    msg['Subject'] = subject
+    msg.add_header("Content-Type", "text/html")
+    msg["Subject"] = subject
     msg.set_payload(body)
 
-    s: SMTP = SMTP('smtp.gmail.com: 587')
+    s: SMTP = SMTP("smtp.gmail.com: 587")
     s.starttls()
-    s.login(msg['From'], password)
-    s.sendmail(msg['From'], [msg['To']], msg.as_string().encode('utf-8'))
+    s.login(msg["From"], password)
+    s.sendmail(msg["From"], [msg["To"]], msg.as_string().encode("utf-8"))
 
 
 def mail(req: HttpRequest) -> HttpResponse:
-    if req.method == 'POST':
-        name: str = str(req.POST.get('name'))
-        email: str = str(req.POST.get('email'))
+    if req.method == "POST":
+        name: str = str(req.POST.get("name"))
+        email: str = str(req.POST.get("email"))
         message: str = (
-            str(req.POST.get('message'))
-            .replace('\n', '<br>')
-            .replace('<', '&lt;')
-            .replace('>', '&gt;')
+            str(req.POST.get("message"))
+            .replace("\n", "<br>")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
         )
 
         contact_adm(
-            'Portfolio Contact Made',
-            f'<p>from: {name}</p><p>email: {email}</p><br>_____<p>{message}</p>_____',
+            "Portfolio Contact Made",
+            f"<p>from: {name}</p><p>email: {email}</p><br>_____<p>{message}</p>_____",
         )
 
-        req.session['email_sent'] = True
+        req.session["email_sent"] = True
 
-    return HttpResponseRedirect(reverse('home:index'))
+    return HttpResponseRedirect(reverse("home:index"))
 
 
 def wake_db(req):
