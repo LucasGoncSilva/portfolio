@@ -2,7 +2,7 @@ name: DB Wake
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 0 * * *"
 
 jobs:
   curl_job:
@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Executar comando curl
         run: |
-          curl lucasgonc.vercel.app/send/wake -v
+          curl https://lucasgonc.vercel.app/send/wake

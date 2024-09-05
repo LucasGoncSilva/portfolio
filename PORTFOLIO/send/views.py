@@ -26,7 +26,7 @@ def contact_adm(subject: str, body: str) -> None:
     s.sendmail(msg["From"], [msg["To"]], msg.as_string().encode("utf-8"))
 
 
-def mail(req: HttpRequest) -> HttpResponse:
+def mail(req: HttpRequest) -> HttpResponseRedirect:
     if req.method == "POST":
         name: str = str(req.POST.get("name"))
         email: str = str(req.POST.get("email"))
@@ -47,7 +47,7 @@ def mail(req: HttpRequest) -> HttpResponse:
     return HttpResponseRedirect(reverse("home:index"))
 
 
-def wake_db(req):
+def wake_db(req: HttpRequest) -> HttpResponse:
     WakeDatabase.objects.create()
 
     e = WakeDatabase.objects.all()
