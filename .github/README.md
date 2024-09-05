@@ -3,7 +3,7 @@
   Lucas Gonc
 </h1>
 
-![GitHub License](https://img.shields.io/github/license/LucasGoncSilva/?labelColor=101010)
+![GitHub License](https://img.shields.io/github/license/LucasGoncSilva/portfolio?labelColor=101010)
 
 Este projeto, assim como o nome sugere, é o meu portifólio, onde estão apresentados tanto quem sou quanto algumas das minhas capacidade, acompanhado dos meus projetos mais relevantes.
 
