@@ -31,7 +31,7 @@ soon: Project = Project(
     "#",
 )
 
-project_cards: list[Project] = [swarden, project_automation, vmap, bookery]
+project_cards: list[Project] = [swarden, project_automation, bookery, vmap]
 
 project_cards += [soon] * (6 - len(project_cards))
 
