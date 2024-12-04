@@ -1,4 +1,4 @@
-from django.db.models import Model, DateField
+from django.db.models import DateField, Model
 
 
 # Create your models here.

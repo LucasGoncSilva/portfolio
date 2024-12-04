@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const descriptionDiv = document.getElementById("description");
 
-  const emailSendErr = "Há algo de errado com o ";
+  const emailSendErr = "There is something wrong with";
 
   function toTitleCase(str) {
     return str.replace(/\w\S*/g, function (txt) {
@@ -24,10 +24,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
     switch (true) {
       case emailTest === false && nameTest === false:
-        return emailSendErr + "nome e o email";
+        return emailSendErr + "name and email";
 
       case nameTest === false:
-        return emailSendErr + "nome";
+        return emailSendErr + "name";
 
       case emailTest === false:
         return emailSendErr + "email";
@@ -56,9 +56,9 @@ window.addEventListener("DOMContentLoaded", () => {
       title: "Menu",
       html:
         '<h3><a href="#skills">Skills</a></h3><br>' +
-        '<h3><a href="#projects">Projetos</a></h3><br>' +
-        '<h3><a href="#about">Sobre</a></h3><br>' +
-        '<h3><a href="#contact">Contato</a></h3>',
+        '<h3><a href="#projects">Projects</a></h3><br>' +
+        '<h3><a href="#about">About</a></h3><br>' +
+        '<h3><a href="#contact">Contact Me</a></h3>',
     });
   };
 
@@ -73,8 +73,8 @@ window.addEventListener("DOMContentLoaded", () => {
     if (formValidation !== true) {
       Swal.fire({
         icon: "error",
-        title: "Então...",
-        html: `<p>${formValidation}...</p>` + "<p>Tente novamente :)</p>",
+        title: "Well...",
+        html: `<p>${formValidation}...</p>` + "<p>Try again</p>",
       });
 
       return false;
@@ -92,7 +92,7 @@ window.addEventListener("DOMContentLoaded", () => {
     e.addEventListener("mouseout", (e) => {
       if (e.tagName !== "img") {
         descriptionDiv.innerHTML =
-          "<h3>&#12288;</h3><p>Para mais detalhes passe o mouse por cima do card</p>";
+          "<h3>&#12288;</h3><p>For details hover over it</p>";
       }
     });
   });

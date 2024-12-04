@@ -17,8 +17,8 @@
     Swal.fire({
         icon: 'success',
         iconColor: '#4717f6',
-        title: 'E-mail enviado!',
-        html: '<p>Seu e-mail foi enviado com sucesso!</p>'
+        title: 'Email sent',
+        html: '<p>Your email was sent successfully</p>'
     })
 </script>
 {% endif %}
@@ -35,10 +35,10 @@
     </div>
 
     <nav>
-        <a href="#whoami-anchor">Quem sou?</a>
-        <a href="#XP-anchor">Experiencies</a>
-        <a href="#skills-anchor">Expertises</a>
-        <a href="#contact-anchor">Contato</a>
+        <a href="#whoami-anchor">Who Am I?</a>
+        <a href="#XP-anchor">Experiences</a>
+        <a href="#skills-anchor">Skills</a>
+        <a href="#contact-anchor">Contact Me</a>
     </nav>
 
 </header>
@@ -60,8 +60,8 @@
             </aside>
 
             <div id="home-landing-text">
-                <h1><span>Elevando</span> o padrão de <span>qualidade</span> no desenvolvimento de produtos digitais
-                    <span>modernos</span>.
+                <h1>
+                    <span>Elevating quality</span> benchmarks in <span>modern</span> digital product development.
                 </h1>
 
                 <a class=" delay-3000" href="#whoami-anchor">&darr;</a>
@@ -77,23 +77,24 @@
             <img src="https://github.com/LucasGoncSilva.png" alt="Foto de perfil.">
 
             <div>
-                <h3>Sobre minha pessoa</h3>
+                <h3>About me</h3>
                 <h2>LUCAS GONÇALVES</h2>
-                <h4>Programador e Desenvolvedor Back-End</h4>
+                <h4>Software Engineer</h4>
 
                 <hr>
 
-                <p>Desde o início da minha carreira em desenvolvimento de software (2021) busco entregar
-                    <span>valor</span> real, indo além do simples ato de codar. Creio ser <span>fundamental</span>
-                    contribuir como um profissional <span>consciente</span> e não um bot, utilizando meu conhecimento e
-                    experiência para resolver problemas e <span>impactar positivamente</span> a vida das pessoas e os
-                    resultados das empresas.
+                <p>Since the beginning of my career in software development (2021), I have aimed to provide <span>real
+                        value</span>, going beyond the simple act of coding. I believe it is <span>essential</span> to
+                    contribute as a <span>conscious</span> professional and not a bot, using my knowledge and experience
+                    to <span>solve</span> problems and positively <span>impact</span> people's lives and companies'
+                    results.
                 </p>
 
-                <p>Atualmente estou focado no desenvolvimento <span>Back-End</span> e de <span>Automação de
-                        Testes</span>, onde tive a oportunidade de trabalhar no setores imobiliário-governamental. Aqui
-                    utilizei minhas habilidades em <span>desenvolvimento</span> web com Django e Unittest com Selenium e
-                    Zeep, para entregar soluções robustas e eficazes, tudo desenvolvido em <span>Python</span>.</p>
+                <p>I'm currently focused on <span>Back-End</span> and <span>Test Automation</span> development, where
+                    I've had the opportunity to work in the real estate and government sectors. Here I use my
+                    <span>development</span> skills with Django and Unittest with Selenium and Zeep to deliver robust
+                    and effective solutions, all developed in <span>Python</span>.
+                </p>
 
                 <div>
                     <a href="https://github.com/lucasgoncsilva">
@@ -154,7 +155,7 @@
     <section id="XP">
         <div id="XP-anchor" class="anchor"></div>
 
-        <h1><span>&gt;</span> EXPERIENCIES</h1>
+        <h1><span>&gt;</span> EXPERIENCES</h1>
 
         <div id="XP-cards-container">
             {% for project in project_cards %}
@@ -167,7 +168,7 @@
                     <p>{{ project.description }}</p>
                 </div>
 
-                <a href="{{ project.url }}">Acessar</a>
+                <a href="{{ project.url }}">Access</a>
             </div>
             {% endfor %}
         </div>
@@ -178,12 +179,12 @@
 
     <section id="skills">
         <div id="skills-anchor" class="anchor"></div>
-        <h1><span>&gt;</span> EXPERTISES</h1>
+        <h1><span>&gt;</span> SKILLS</h1>
 
         <div>
             <div id="description">
                 <h3>&#12288;</h3>
-                <p>Para mais detalhes passe o mouse por cima do card</p>
+                <p>For details hover over it</p>
             </div>
 
             <div id="skills-cards-container">
@@ -213,25 +214,25 @@
     <section id="contact">
         <div id="contact-anchor" class="anchor"></div>
 
-        <h1><span>&gt;</span> CONTATO</h1>
+        <h1><span>&gt;</span> CONTACT ME</h1>
 
         <form action="{% url 'send:mail' %}" method="post">
             {% csrf_token %}
 
             <fieldset>
-                <h3>Enviar e-mail</h3>
+                <h3>Send e-mail</h3>
 
-                <label for="name">Nome</label><br>
+                <label for="name">Name</label><br>
                 <input type="text" id="name" name="name" placeholder="Joãozinho da Silva Santos" required><br><br>
 
                 <label for="email">E-mail</label><br>
                 <input type="email" id='email' name="email" placeholder="joao.zinho@email.com" required><br><br>
 
-                <label for="message">Mensagem</label><br>
+                <label for="message">Message</label><br>
                 <textarea name="message" style="resize: none" cols="" rows=""
-                    placeholder="Joãozinho falando, muito maneiro isso!" required></textarea><br><br>
+                    placeholder="Joãozinho here, great design!" required></textarea><br><br>
 
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Send">
 
             </fieldset>
         </form>

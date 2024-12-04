@@ -5,9 +5,9 @@
 
 ![GitHub License](https://img.shields.io/github/license/LucasGoncSilva/portfolio?labelColor=101010)
 
-Este projeto, assim como o nome sugere, é o meu portifólio, onde estão apresentados tanto quem sou quanto algumas das minhas capacidade, acompanhado dos meus projetos mais relevantes.
+This project, as it seems to be, is my personal portfolio, where I show and lead you for both what I'm able to do and who I am, also showing my most relevants projects.
 
-Acesse o portfolio através desse endereço: [https://lucasgonc.vercel.app/](https://lucasgonc.vercel.app/)
+Access it here: [https://lucasgonc.vercel.app/](https://lucasgonc.vercel.app/)
 
 ## Stack
 
