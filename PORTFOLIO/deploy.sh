@@ -1,9 +1,12 @@
-# Installs dependencies
-pip3 install -r requirements.txt
+# Installs uv
+pip3 install uv
+
+# Sync dependencies
+uv sync --no-group dev
 
 # Collects staticfiles
-python3 manage.py collectstatic --no-input
+uv run manage.py collectstatic --no-input
 
 # Handles DB migrations
-python3 manage.py makemigrations
-python3 manage.py migrate
+uv run manage.py makemigrations
+uv run manage.py migrate

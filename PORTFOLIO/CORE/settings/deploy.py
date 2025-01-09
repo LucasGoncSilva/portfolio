@@ -3,6 +3,7 @@
 from os import getenv
 
 import dj_database_url
+
 from CORE.settings.base import *
 
 
