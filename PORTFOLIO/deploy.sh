@@ -2,10 +2,7 @@
 
 pip3 install uv
 
-exec $SHELL
-
-uv sync --no-group dev
-
-uv run manage.py collectstatic --no-input
-uv run manage.py makemigrations
-uv run manage.py migrate
+exec uv sync --no-group dev
+exec uv run manage.py collectstatic --no-input
+exec uv run manage.py makemigrations
+exec uv run manage.py migrate
