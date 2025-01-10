@@ -6,9 +6,10 @@ source .venv/bin/activate
 pip3 install uv
 uv sync --no-group dev
 
-ls
+uv -h
+
 find manage.py
 
-uv run ./manage.py collectstatic --no-input
-uv run ./manage.py makemigrations
-uv run ./manage.py migrate
+uv run manage.py collectstatic --no-input
+uv run manage.py makemigrations
+uv run manage.py migrate
