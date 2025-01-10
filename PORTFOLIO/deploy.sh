@@ -1,12 +1,1 @@
-# Installs uv
-pip3 install uv
-
-# Sync dependencies
-uv sync --no-group dev
-
-# Collects staticfiles
-uv run manage.py collectstatic --no-input
-
-# Handles DB migrations
-uv run manage.py makemigrations
-uv run manage.py migrate
+pip3 install uv; uv sync --no-group dev; uv run manage.py collectstatic --no-input; uv run manage.py makemigrations; uv run manage.py migrate
