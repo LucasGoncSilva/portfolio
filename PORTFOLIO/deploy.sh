@@ -1,7 +1,7 @@
 #!/bin/bash
 
 pip3 install uv
-uv -h
+python3 -m uv -h
 
 uv sync --no-group dev
 
