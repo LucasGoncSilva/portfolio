@@ -1,8 +1,8 @@
 #!/bin/bash
 
-pip3 install uv
+pip3 install -r requirements.txt
 
-exec uv sync --no-group dev
-exec uv run manage.py collectstatic --no-input
-exec uv run manage.py makemigrations
-exec uv run manage.py migrate
+python3 manage.py collectstatic --no-input
+
+python3 manage.py makemigrations
+python3 manage.py migrate
